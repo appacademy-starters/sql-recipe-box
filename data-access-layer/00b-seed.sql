@@ -134,6 +134,7 @@ SELECT pg_catalog.setval(pg_get_serial_sequence('recipes', 'id'), (SELECT MAX(id
 
 INSERT INTO ingredients (recipe_id, amount, unit_of_measure_id, food_stuff)
 VALUES
+
 (12, 3, 12, 'Thai green curry paste'),
 (12, 400, 6, 'coconut milk'),
 (12, 150, 4, 'cooked prawns'),
@@ -187,14 +188,14 @@ VALUES
 (1, 0.5, 13, 'pepper'),
 (1, 0.25, 13, 'salt'),
 (1, 2, 1, 'beef stock'),
-(1, 1, 15, 'fire-roated diced tomatoes'),
-(1, 2, 1, 'uncooked sprial pasta'),
+(1, 1, 15, 'fire-roasted diced tomatoes'),
+(1, 2, 1, 'uncooked spiral pasta'),
 (1, 1, 1, 'frozen peas'),
 (1, 1, 1, 'heavy whipped cream'),
 (1, 0.5, 1, 'grated Parmesan cheese'),
 (2, 2, 12, 'peanut butter'),
 (2, 1, 12, 'jelly, your favorite flavor'),
-(2, 2, 16, 'bread, your favortie kind'),
+(2, 2, 16, 'bread, your favorite kind'),
 (7, 2, 14, 'unbaked pie crusts'),
 (7, 2.5, 10, 'green grapes'),
 (7, 1, 1, 'white sugar, plus extra for top crust'),
@@ -204,7 +205,7 @@ VALUES
 (7, 0.25, 1, 'dark honey'),
 (7, 0.25, 13, 'salt'),
 (7, 3, 12, 'cornstarch'),
-(7, 2, 12, 'unsalted butter, cut into small pieces');
+(7, 2, 12, 'unsalted butter, cut into small pieces')
 SELECT pg_catalog.setval(pg_get_serial_sequence('ingredients', 'id'), (SELECT MAX(id) FROM ingredients)+1);
 
 INSERT INTO instructions (recipe_id, list_order, specification)
