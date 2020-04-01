@@ -205,7 +205,7 @@ VALUES
 (7, 0.25, 1, 'dark honey'),
 (7, 0.25, 13, 'salt'),
 (7, 3, 12, 'cornstarch'),
-(7, 2, 12, 'unsalted butter, cut into small pieces')
+(7, 2, 12, 'unsalted butter, cut into small pieces');
 SELECT pg_catalog.setval(pg_get_serial_sequence('ingredients', 'id'), (SELECT MAX(id) FROM ingredients)+1);
 
 INSERT INTO instructions (recipe_id, list_order, specification)
