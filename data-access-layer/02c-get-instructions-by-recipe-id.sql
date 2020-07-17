@@ -9,7 +9,7 @@
 -- If you return more columns, they will be ignored.
 --
 -- It needs to include a single positional parameter $1 in the WHERE clause so
--- that it gets the ingredietns with the provided recipe id that will be
+-- that it gets the ingredients with the provided recipe id that will be
 -- provided at run time.
 --
 -- This has the general form
