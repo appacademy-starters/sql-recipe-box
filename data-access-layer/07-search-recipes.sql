@@ -1,7 +1,7 @@
 -- This query needs to select the following columns by searching the text in
 -- the "title" column:
 --
---   * From the "reipes" table:
+--   * From the "recipes" table:
 --     * id
 --     * title
 --     * updated

@@ -1,6 +1,6 @@
 -- This query needs to select the following columns:
 --
---   * From the "reipes" table:
+--   * From the "recipes" table:
 --     * id
 --     * title
 --     * created
