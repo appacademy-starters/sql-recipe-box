@@ -113,6 +113,55 @@ in the application. Tying those together, you'll know you're done when you have
 all of the SQL files containing queries and there are no errors in the UI or
 console.
 
+## Directions
+
+Fill out the **00a-database.sql** and **00b-seed.sql** files first. Then seed
+the database with command, `npm run seed`.
+
+### Home Page
+
+Start the server by running `npm run dev`. Then go to `localhost:3000` you should
+see the home page with "Latest Recipes". To show the latest recipes properly, 
+complete the `01-get-ten-most-recent-recipes.sql` file.
+
+After completing the file, make sure you correctly defined the sql query so that
+the first recipe listed is the most recently updated recipe.
+
+### `/recipes/:id`
+
+If you click on one of the recipes in the list of recipes on the home page, it
+will direct you to that recipe's Detail Page. Complete the following files that
+correspond to this page and make sure to test a file right after you fill out 
+the file by refreshing the page:
+  - `02a-get-recipe-by-id.sql`
+  - `02b-get-ingredients-by-recipe-id.sql`
+  - `02c-get-instructions-by-recipe-id.sql`
+
+Make sure to read the instructions well! In all the above sql queries, the 
+`$1` parameter will be the recipe id.
+
+### `/recipes/new`
+
+Click on `ADD A RECIPE` button on the Navigation Bar to direct you to the 
+New Recipe Form page. Fill out the `03a-insert-new-recipe.sql` file so you can
+create a new recipe.
+
+### `/recipes/:id/edit`
+
+After creating a new recipe, you will be directed to the Recipe Edit page where
+you can add instructions and ingredients to a recipe. Complete the following 
+files that correspond to this page and make sure to test a file right after
+you fill out the file:
+  - `03b-get-units-of-measure.sql`
+  - `04-insert-new-ingredient.sql`
+  - `05-insert-new-instruction.sql`
+  - `06-delete-recipe.sql`
+
+### `/recipes?term={searchTerm}`
+
+Allow users to find recipes by a part of their name using the Search Bar in the
+Navigation Bar. Complete `07-search-recipes.sql` for this feature.
+
 [Recipe card]: https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-SQL/assets/sql-recipe-card.jpeg
 [express.js]: https://www.expressjs.com
 [pug]: https://pugjs.org
