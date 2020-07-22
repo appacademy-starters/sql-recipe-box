@@ -70,7 +70,7 @@ You'll do all of your work in the **data-access-layer** directory. In there, you
 will find a series of SQL files. In each, you will find instructions of what to
 do to make the user interface to work. They are numbered in an implied order for
 you to complete them. The only real requirement is that you finish the SQL for
-the **00a-database.sql** and **00b-seed.sql** files first. That way, as you make
+the **00a-schema.sql** and **00b-seed.sql** files first. That way, as you make
 your way through the rest of the SQL files, the tables and some of the data will
 already exist for you. You can run the command `npm run seed` to run both of
 those files or pipe each it into `psql` as you've been doing.
@@ -115,7 +115,7 @@ console.
 
 ## Directions
 
-Fill out the **00a-database.sql** and **00b-seed.sql** files first. Then seed
+Fill out the **00a-schema.sql** and **00b-seed.sql** files first. Then seed
 the database with command, `npm run seed`.
 
 ### Home Page
