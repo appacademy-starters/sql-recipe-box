@@ -29,7 +29,7 @@
 -- or your favorite PostgreSQL client.
 --
 -- Read more about COALESCE here:
---   https://www.enterprisedb.com/postgres-tutorials/how-use-coalesce-postgresq
+--   https://www.enterprisedb.com/postgres-tutorials/how-use-coalesce-postgresql
 --
 -- Once you have your SQL statement figured out, here's what the INSERT will
 -- look like:
